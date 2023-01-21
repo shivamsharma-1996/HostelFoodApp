@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/label_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/amarante"
+        android:gravity="center"
+        android:text="Select food type😋"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintBottom_toTopOf="@+id/btn_veg"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end"
+        app:layout_constraintStart_toEndOf="@+id/gl_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_veg"
+        style="@style/ripple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_stroke_bright_translucent"
+        android:fontFamily="@font/amarante"
+        android:padding="16dp"
+        android:text="VEG 🥗"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:backgroundTint="#F7D8BA"
+        app:layout_constraintBottom_toTopOf="@+id/btn_non_veg"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/gl_start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/btn_non_veg"
+        style="@style/ripple"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/bg_stroke_bright_translucent"
+        android:fontFamily="@font/amarante"
+        android:padding="16dp"
+        android:text="Non-veg 🍗"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@color/textSecondary"
+        android:textStyle="bold"
+        android:backgroundTint="#CAF1DE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end"
+        app:layout_constraintStart_toEndOf="@+id/gl_start"
+        app:layout_constraintTop_toBottomOf="@+id/btn_veg" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
