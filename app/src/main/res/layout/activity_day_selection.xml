@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaySelectionActivity"
+    android:background="@color/grey_200">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="42sp"
+        android:text="Select day 🗓"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_monday"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_monday"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:backgroundTint="#55ffe1"
+        android:fontFamily="@font/amarante"
+        android:text="Monday"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_wednesday"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tuesday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.8"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_tuesday"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Tuesday"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        android:fontFamily="@font/amarante"
+        android:textColor="@color/black"
+        android:backgroundTint="#FEF8DD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_monday"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_monday"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_wednesday"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Wednesday"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#F7D8BA"
+        android:textColor="@color/black"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintBottom_toTopOf="@+id/btn_friday"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tuesday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_monday" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_thursday"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Thursday"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#a6fd29"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/amarante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_wednesday"
+        app:layout_constraintTop_toTopOf="@+id/btn_wednesday" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_friday"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Friday"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#FD4699"
+        android:fontFamily="@font/amarante"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_sunday"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tuesday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_wednesday" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_saturday"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="Saturday"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#CAF1DE"
+        android:fontFamily="@font/amarante"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_friday"
+        app:layout_constraintTop_toTopOf="@+id/btn_friday" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_sunday"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:text="Sunday"
+        android:textSize="18dp"
+        app:cornerRadius="10dp"
+        android:backgroundTint="#e3b3d5"
+        android:fontFamily="@font/amarante"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_tuesday"
+        app:layout_constraintStart_toStartOf="@+id/btn_monday"
+        app:layout_constraintTop_toBottomOf="@+id/btn_friday" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
